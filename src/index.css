@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.flow-hide {
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+.flow-hide-x-1 {
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.flow-hide-x {
+  overflow-x: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+.flow-hide-x::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  cursor: pointer;
+}
+.flow-hide::-webkit-scrollbar {
+  /* WebKit */
+  width: 0;
+  height: 0;
+}
+.hide-scroll{
+    scrollbar-width: none !important; /* Firefox */
+  -ms-overflow-style: none !important; /* Internet Explorer 10+ */
+}
+.hide-scroll::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+}
